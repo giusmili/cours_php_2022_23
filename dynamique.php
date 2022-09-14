@@ -1,20 +1,20 @@
 <!--variables-->
 <?php
     
-    include_once './src/var.inc.php';
+    include_once './pages/var.inc.php';
     
 ?>
 <!-- header -->
 <?php
 
-    include_once './src/header_php.inc.php';
+    include_once './pages/header_php.inc.php';
 
 ?>
 <!-- end header -->
 <body>
 	<!--cours https://hackmd.io/iNktz6XzRyu7gGmKvPpXfQ?view-->
 	<header>
-		<h1><?php print $_msg->_presentation." ".main_title." version : ".$_version?></h1>
+		<h1><?php print $_msg->_presentation." ".title." version : ".$_version?></h1>
 	</header>
 	<main>
         <figure>
@@ -38,7 +38,7 @@
 		</section>
 	</main>
     <?php
-        require_once './src/footer.inc.php';
+        require_once './pages/footer.inc.php';
     ?>
 	<!-- <pre>
         <?php
