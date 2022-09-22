@@ -13,6 +13,8 @@
      class User{
         static $_nombre = 2022;
         public $_presentation = "Hello!!!";
+        
     }
     $_msg = new User;
+   
 ?>

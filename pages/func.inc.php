@@ -1,7 +1,7 @@
 <?php
 
     // function anonyme, flechées et nommée
-
+    
      function user(int $_age, string $_nom){
         return $_age." ".$_nom;
      }
@@ -16,19 +16,27 @@
 
     //référence
 
-    $name = "Tony";
+    $_name = "Tony";
         
-    $displayInfo = function() use (&$name){ /* 
+    $_displayInfo = function() use (&$_name){ /* 
         changement d'une référence &$name. On affiche Joe à la place d'Tony
         */
-        echo sprintf("<br>Bonjour %s", $name);
+        echo sprintf("<br>Bonjour %s", $_name);
     };
-    $name = "Jon";
-    $displayInfo("Tony"); //cela affichera Jon
+    //renommer la variable $_name
+    $_name = "Jon";
+    $_displayInfo("Tony"); //cela affichera Jon
 
-
+    
     $_func = fn($_nombre) => $_nombre * $_nombre;
-    print $_func(5);
+    print $_func(5); //cela affiche 25
+
+    
+    
+    $date = new DateTime; // instance de DateTime
+    echo $date->format('d/m/Y'); //exemple de function lié à un objet dans ce cas est appelé méthode
+
+ ?
 
 
 ?>

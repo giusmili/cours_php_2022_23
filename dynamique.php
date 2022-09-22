@@ -23,6 +23,7 @@
                 <h2>
                     PHP version <?= $_version." ".User::$_nombre ?>
                 </h2>
+             
             </figcaption>
         </figure>
 		<section>
@@ -34,7 +35,11 @@
 				
 			</p>
             <?= $_signature ?>
-			
+                <p>
+                    <?php
+                        include_once('./pages/functions.inc.php')
+                    ?>
+                </p>
 		</section>
 	</main>
     <?php
